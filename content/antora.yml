@@ -1,0 +1,14 @@
+name: modules
+title: OpenShift SRE
+version: master
+nav:
+  - modules/ROOT/nav.adoc
+
+asciidoc:
+  attributes:
+    lab_name: "OpenShift SRE"
+    release-version: master
+    page-pagination: true
+    page-links:
+    - url: "https://sre.k8socp.com"
+      text: Home

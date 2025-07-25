@@ -1,0 +1,28 @@
+= OpenShift Primer
+
+== Welcome
+
+Welcome to the OpenShift SRE Workshop!
+
+=== Workshop Goals
+
+TBD
+
+=== Workshop Environment
+
+TBD
+
+=== Agenda
+
+.**Day 1** +
+TBD
+
+.**Day 2** +
+TBD
+
+=== Who Should Attend
+
+
+=== Conclusion
+
+Let’s get started!
