@@ -10,5 +10,5 @@ asciidoc:
     release-version: master
     page-pagination: true
     page-links:
-    - url: "https://sre.k8socp.com"
+    - url: "https://sre.workshop.k8socp.com"
       text: Home

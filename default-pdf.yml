@@ -1,7 +1,7 @@
 ---
 site:
   title: OpenShift SRE
-  url: https://sre.k8socp.com
+  url: https://sre.workshop.k8socp.com
   start_page: modules::index.adoc
 
 content:
