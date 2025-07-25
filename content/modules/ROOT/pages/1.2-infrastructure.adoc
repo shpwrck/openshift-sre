@@ -1,0 +1,58 @@
+= Infrastructure
+
+== Content
+
+Node maintenance activities required for a Kubernetes cluster:
+
+=== Node Health Monitoring
+
+* **System Resources**: Monitor CPU, memory, disk space, and network utilization
+* **Kubelet Status**: Ensure kubelet service is running and responsive
+* **Container Runtime**: Monitor Docker/CRI-O/containerd health and performance
+* **Node Conditions**: Track Ready, MemoryPressure, DiskPressure, and PIDPressure status
+
+=== Operating System Maintenance
+
+* **Security Patches**: Apply OS security updates using rolling update strategy
+* **Kernel Updates**: Coordinate kernel updates with node cordoning and draining
+* **Package Management**: Maintain system packages and dependencies
+* **Log Rotation**: Configure system log rotation to prevent disk space issues
+
+=== Storage Management
+
+* **Disk Space**: Monitor filesystem usage for root, container images, and logs
+* **Volume Health**: Check persistent volume health and storage driver status
+* **Image Cleanup**: Remove unused container images and implement garbage collection
+* **Temporary Files**: Clean up temporary files and container debris
+
+=== Network Configuration
+
+* **Network Connectivity**: Verify pod-to-pod and external network connectivity
+* **CNI Health**: Monitor Container Network Interface plugin status
+* **DNS Resolution**: Ensure proper DNS resolution within the cluster
+* **Firewall Rules**: Maintain appropriate firewall and security group configurations
+
+=== Node Lifecycle Operations
+
+* **Cordoning**: Safely cordon nodes before maintenance to prevent new pods
+* **Draining**: Gracefully drain pods before node maintenance or replacement
+* **Scaling**: Add or remove nodes based on capacity requirements
+* **Replacement**: Replace unhealthy or aging nodes with minimal disruption
+
+=== Security Hardening
+
+* **Certificate Rotation**: Rotate kubelet and node certificates before expiration
+* **User Access**: Manage SSH access and disable unnecessary services
+* **Compliance**: Ensure nodes meet security compliance requirements (CIS benchmarks)
+* **Vulnerability Scanning**: Regular security scans and remediation
+
+=== Performance Optimization
+
+* **Resource Limits**: Configure appropriate resource requests and limits
+* **Tuning Parameters**: Optimize kernel parameters and system settings
+* **Monitoring Tools**: Deploy node-level monitoring (node-exporter, fluent-bit)
+* **Capacity Planning**: Track resource trends and plan for growth
+
+== References
+
+== Knowledge Check

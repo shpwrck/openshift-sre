@@ -1,6 +1,12 @@
 = Day One Agenda
 
-TBD
+Day One of the workshop focuses on components that are natively installed with OpenShift
+
+* xref:1.1-components.adoc[Components]
+* xref:1.2-infrastructure.adoc[Infrastructure]
+* xref:1.3-observability.adoc[Observability]
+* xref:1.4-access.adoc[Access and Identity Management]
+* xref:1.5-cluster-operations.adoc[Cluster Operations]
 
 == Outcomes
 

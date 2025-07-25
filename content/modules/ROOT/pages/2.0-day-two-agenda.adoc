@@ -1,6 +1,12 @@
-= Day One Agenda
+= Day Two Agenda
 
-TBD
+Day Two of the workshop focuses on components that are necessary extensions to OpenShift
+
+* xref:2.1-gitops.adoc[GitOps]
+* xref:2.2-secrets-management.adoc[Secrets Management]
+* xref:2.3-platform-security.adoc[Platform Security]
+* xref:2.4-policy.adoc[Policy Management]
+* xref:2.5-platform-architecture.adoc[Platform Architecture]
 
 == Outcomes
 

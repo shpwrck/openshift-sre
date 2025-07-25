@@ -1,0 +1,46 @@
+= Cluster Operations
+
+== Content
+
+Core cluster lifecycle operations that SREs manage:
+
+=== Cluster Updates
+
+* **Update Planning**: Plan OpenShift cluster updates including scheduling, testing, and rollback strategies
+* **Pre-update Validation**: Verify cluster health, node readiness, and workload compatibility before updates
+* **Rolling Updates**: Execute cluster updates using machine config pools and staged rollouts
+* **Update Channels**: Manage update channels (stable, fast, candidate) and version targeting
+* **Post-update Verification**: Validate cluster functionality and workload health after updates
+* **Update Rollbacks**: Execute rollback procedures when updates fail or cause issues
+
+=== Node Addition and Removal
+
+* **Node Scaling**: Add worker nodes to increase cluster capacity based on resource demands
+* **Infrastructure Nodes**: Add dedicated infrastructure nodes for OpenShift components (registry, monitoring, logging)
+* **Node Draining**: Safely drain nodes before removal to migrate workloads without disruption
+* **Node Cordoning**: Cordon nodes to prevent new pod scheduling during maintenance or removal
+* **Machine Sets**: Manage machine sets to automate node provisioning and replacement
+* **Node Decommissioning**: Properly remove nodes from the cluster and clean up associated resources
+
+=== Node Image Management
+
+* **Operating System Updates**: Apply RHEL CoreOS updates through machine config operators
+* **Base Image Rotation**: Manage base node image updates and security patches
+* **Machine Config Pools**: Configure and manage machine config pools for different node types
+* **Image Validation**: Test new node images in development before production deployment
+* **Rollback Procedures**: Maintain ability to rollback to previous node images when issues occur
+* **Custom Machine Configs**: Create and manage custom machine configurations for specific requirements
+
+=== Device Management
+
+* **GPU Resources**: Configure and manage GPU nodes using NVIDIA GPU Operator or AMD GPU drivers
+* **Device Plugins**: Deploy and maintain Kubernetes device plugins for specialized hardware
+* **Network Interfaces**: Manage SR-IOV network devices and high-performance networking configurations
+* **Resource Allocation**: Configure device resource limits and scheduling for GPU/FPGA workloads
+* **Driver Management**: Maintain device drivers through machine configs and operator deployments
+* **Device Monitoring**: Monitor device utilization, temperature, and health status across nodes
+* **Hardware Compatibility**: Validate hardware compatibility and manage device firmware updates
+
+== References
+
+== Knowledge Check

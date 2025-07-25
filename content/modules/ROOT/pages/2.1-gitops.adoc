@@ -1,0 +1,65 @@
+= GitOps
+
+== Content
+
+Installing and managing OpenShift GitOps for declarative cluster and application management:
+
+=== OpenShift GitOps Installation
+
+* **Operator Installation**: Install OpenShift GitOps Operator from OperatorHub or via CLI
+* **Instance Configuration**: Configure ArgoCD instances for different environments (dev, staging, prod)
+* **Resource Sizing**: Size ArgoCD components based on repository count and sync frequency requirements
+* **High Availability**: Configure ArgoCD for high availability in production environments
+* **Namespace Management**: Set up appropriate namespaces and RBAC for GitOps operations
+
+=== ArgoCD Configuration Management
+
+* **Repository Integration**: Connect ArgoCD to Git repositories (GitHub, GitLab, Bitbucket, etc.)
+* **Cluster Registration**: Register additional OpenShift clusters as ArgoCD deployment targets
+* **Application Projects**: Configure ArgoCD projects to organize and isolate applications
+* **RBAC Configuration**: Set up role-based access control for different teams and environments
+* **SSO Integration**: Integrate ArgoCD with OpenShift OAuth or external identity providers
+
+=== Application Lifecycle Management
+
+* **Application Definitions**: Create and manage ArgoCD Application custom resources
+* **Sync Policies**: Configure automatic vs manual sync policies and sync windows
+* **Health Checks**: Define custom health checks for application resources
+* **Rollback Procedures**: Implement rollback strategies for failed deployments
+* **Multi-cluster Deployments**: Manage applications across multiple OpenShift clusters
+
+=== GitOps Workflow Implementation
+
+* **Repository Structure**: Establish standardized Git repository structures for infrastructure and applications
+* **Branching Strategy**: Implement GitOps-friendly branching strategies (GitFlow, trunk-based, etc.)
+* **Promotion Workflows**: Set up automated promotion workflows between environments
+* **Secret Management**: Integrate external secret management solutions (Vault, External Secrets Operator)
+* **Configuration Management**: Manage environment-specific configurations using Kustomize or Helm
+
+=== Monitoring and Observability
+
+* **ArgoCD Metrics**: Monitor ArgoCD performance, sync status, and application health
+* **Sync Monitoring**: Track application sync frequency, duration, and success rates
+* **Drift Detection**: Monitor and alert on configuration drift between Git and cluster state
+* **Audit Logging**: Enable comprehensive audit logging for GitOps operations
+* **Notification Setup**: Configure notifications for sync failures, drift detection, and deployment events
+
+=== Security and Compliance
+
+* **Git Repository Security**: Implement secure Git repository access using SSH keys or tokens
+* **Image Security**: Integrate image scanning and security policies into GitOps workflows
+* **Policy Enforcement**: Use Open Policy Agent (OPA) Gatekeeper for policy-as-code enforcement
+* **Compliance Scanning**: Integrate compliance tools into GitOps deployment pipelines
+* **Access Controls**: Implement least-privilege access for GitOps service accounts and users
+
+=== Disaster Recovery and Backup
+
+* **ArgoCD Backup**: Implement backup strategies for ArgoCD configuration and application definitions
+* **Repository Backup**: Ensure Git repository backup and disaster recovery procedures
+* **Cluster Recovery**: Establish cluster recovery procedures using GitOps for rapid restoration
+* **State Reconstruction**: Implement procedures to reconstruct cluster state from Git repositories
+* **Testing Recovery**: Regularly test disaster recovery procedures in non-production environments
+
+== References
+
+== Knowledge Check

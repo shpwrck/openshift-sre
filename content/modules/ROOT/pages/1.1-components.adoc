@@ -1,0 +1,47 @@
+= Components
+
+== Content
+
+Keeping the core Kubernetes components healthy:
+
+=== etcd Cluster
+
+* **Backups**: Schedule automated backups and test restore procedures regularly
+* **Storage**: Monitor disk space, IOPS, and perform regular compaction
+* **Health**: Track cluster member status and performance metrics
+* **Security**: Rotate TLS certificates before expiration
+
+=== kube-apiserver
+
+* **Certificates**: Rotate API server and service account certificates
+* **Monitoring**: Watch `/healthz`, `/readyz` endpoints and request rates
+* **Logs**: Manage audit log rotation to prevent disk space issues
+* **Performance**: Configure rate limiting and load balancing
+
+=== kube-controller-manager
+
+* **Leadership**: Monitor leader election and lease renewals
+* **Controllers**: Track individual controller loop health and performance
+* **Resources**: Monitor cluster resource utilization and controller overhead
+* **Webhooks**: Maintain admission and validation webhook health
+
+=== kube-scheduler
+
+* **Performance**: Monitor pod scheduling latency and queue depths
+* **Capacity**: Track node availability and schedulable resources
+* **Leadership**: Ensure proper leader election functionality
+* **Policies**: Maintain and validate scheduling policies
+
+=== OpenShift Console
+
+* **Availability**: Monitor console pod health and replica status in `openshift-console` namespace
+* **Performance**: Track response times, resource usage, and user session handling
+* **Security**: Manage OAuth integration, RBAC policies, and TLS certificates
+* **Configuration**: Maintain console operator settings and custom branding/links
+* **Updates**: Coordinate console updates with cluster upgrades and test functionality
+
+
+
+== References
+
+== Knowledge Check

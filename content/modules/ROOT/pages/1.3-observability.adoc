@@ -1,0 +1,51 @@
+= Observability
+
+== Content
+
+Understanding how to do cluster monitoring:
+
+=== Built-in Monitoring Stack
+
+* **Cluster Monitoring**: Leverage OpenShift's integrated Prometheus and Alertmanager
+* **Web Console**: Use built-in monitoring dashboards and metrics views
+* **Cluster Monitoring Operator**: Manage the monitoring stack configuration
+* **User Workload Monitoring**: Enable monitoring for user applications (optional configuration)
+
+=== Metrics Collection
+
+* **Platform Metrics**: Monitor control plane, nodes, and OpenShift components automatically
+* **Node Metrics**: Collect system-level metrics via built-in node-exporter
+* **Application Metrics**: Expose application metrics via `/metrics` endpoints for Prometheus scraping
+* **Custom Resources**: Monitor custom resource metrics through ServiceMonitor objects
+
+=== Alerting and Notifications
+
+* **Default Alert Rules**: Use pre-configured alerts for cluster health and performance
+* **Custom Alerts**: Create PrometheusRule objects for application-specific alerts
+* **Alertmanager Configuration**: Configure notification channels (email, webhooks, etc.)
+* **Alert Routing**: Set up alert routing and grouping policies
+
+=== Log Management (Basic)
+
+* **Container Logs**: Access pod and container logs via `oc logs` and Console
+* **Event Logs**: Monitor Kubernetes events for troubleshooting
+* **Audit Logs**: Configure API server audit logging (basic level)
+* **Journal Logs**: Access systemd journal logs on cluster nodes
+
+=== Health Checks and Probes
+
+* **Liveness Probes**: Configure application health checks for automatic restarts
+* **Readiness Probes**: Ensure pods are ready to receive traffic
+* **Startup Probes**: Handle slow-starting applications appropriately
+* **Cluster Health**: Monitor overall cluster component health
+
+=== Performance Monitoring
+
+* **Resource Utilization**: Track CPU, memory, storage, and network usage
+* **Capacity Planning**: Monitor resource trends and utilization patterns
+* **SLI Monitoring**: Track basic Service Level Indicators
+* **Quota Monitoring**: Monitor namespace resource quotas and limits
+
+== References
+
+== Knowledge Check

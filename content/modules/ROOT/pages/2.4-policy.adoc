@@ -1,0 +1,57 @@
+= Policy Management
+
+== Content
+
+Installing and managing Red Hat Gatekeeper for admission policy enforcement in OpenShift:
+
+=== Red Hat Gatekeeper Installation
+
+* **Operator Installation**: Install Gatekeeper Operator from OperatorHub or via CLI subscription
+* **Gatekeeper Instance**: Create and configure Gatekeeper custom resource for cluster deployment
+* **Resource Requirements**: Size Gatekeeper components based on cluster size and policy complexity
+* **Namespace Configuration**: Configure Gatekeeper system namespace and RBAC permissions
+* **Validation**: Verify Gatekeeper installation and webhook configuration
+
+=== Gatekeeper Configuration Management
+
+* **System Configuration**: Configure Gatekeeper system settings including audit intervals and violation limits
+* **Exemption Management**: Configure namespace and resource exemptions from policy enforcement
+* **Sync Configuration**: Set up resource syncing for policies that need access to cluster state
+* **Webhook Configuration**: Manage validating admission webhook settings and failure policies
+* **Resource Limits**: Configure appropriate CPU and memory limits for Gatekeeper components
+
+=== Constraint Templates Development
+
+* **Template Creation**: Develop ConstraintTemplate resources using Rego policy language
+* **Parameter Definition**: Define configurable parameters for reusable policy templates
+* **Validation Logic**: Implement Rego rules for resource validation and policy enforcement
+* **Error Messages**: Create clear and actionable violation messages for policy failures
+* **Testing Templates**: Test constraint templates in development environments before deployment
+
+=== Constraint Implementation
+
+* **Constraint Resources**: Create Constraint resources from templates to enforce specific policies
+* **Scope Configuration**: Configure constraint scope using namespace selectors and exclusions
+* **Enforcement Actions**: Set enforcement actions (warn, deny, dryrun) based on policy requirements
+* **Parameter Configuration**: Configure constraint-specific parameters for policy customization
+* **Violation Handling**: Implement procedures for handling and remediating policy violations
+
+=== Policy Library Management
+
+* **Built-in Policies**: Utilize Red Hat's curated policy library for common security requirements
+* **Custom Policies**: Develop organization-specific policies for unique compliance requirements
+* **Policy Versioning**: Implement version control for policy templates and constraints
+* **Policy Catalog**: Maintain a centralized catalog of available policies and their purposes
+* **Policy Documentation**: Document policy requirements, parameters, and use cases
+
+=== Admission Policy Enforcement
+
+* **Validating Policies**: Implement policies that validate resource specifications during admission
+* **Security Enforcement**: Enforce security policies for pod security standards and container configurations
+* **Resource Validation**: Validate resource requests, limits, and naming conventions
+* **Compliance Checks**: Implement policies for regulatory compliance (PCI DSS, SOC2, etc.)
+* **Mutating Alternatives**: Understand when to use mutating admission controllers vs Gatekeeper policies
+
+== References
+
+== Knowledge Check

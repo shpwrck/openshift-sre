@@ -1,0 +1,43 @@
+= Advanced Cluster Security
+
+== Content
+
+Implementing Red Hat Advanced Cluster Security (RHACS) for comprehensive OpenShift security:
+
+=== RHACS Installation and Setup
+
+* **Operator Installation**: Deploy RHACS Operator from OperatorHub to manage security components
+* **Central Services**: Install and configure RHACS Central for centralized security management
+* **Secured Cluster**: Deploy Secured Cluster components (Sensor, Collector, Admission Controller)
+* **Scanner Integration**: Configure image vulnerability scanning with integrated or external scanners
+* **Initial Configuration**: Set up basic security policies, notifications, and user access
+
+=== Image Security and Vulnerability Management
+
+* **Image Scanning**: Automatic scanning of container images for vulnerabilities and policy violations
+* **Registry Integration**: Connect to container registries (Quay, Docker Hub, AWS ECR, etc.) for scanning
+* **Vulnerability Assessment**: Analyze CVE data, CVSS scores, and exploitability information
+* **Policy Enforcement**: Create and enforce image security policies based on vulnerability severity
+* **Scan Results Management**: Review, acknowledge, and track remediation of security findings
+
+=== Runtime Security Monitoring
+
+* **Behavioral Analysis**: Monitor runtime behavior and detect anomalous activity
+* **Network Monitoring**: Track network connections and identify suspicious communication patterns
+* **Process Monitoring**: Monitor process execution and detect unauthorized or malicious processes
+* **File System Monitoring**: Track file system changes and detect potential security breaches
+* **Incident Response**: Investigate security incidents and implement response procedures
+
+=== Compliance and Risk Management
+
+* **Compliance Standards**: Assess compliance against standards (CIS, NIST, PCI DSS, SOC2)
+* **Risk Assessment**: Perform continuous risk assessment of cluster security posture
+* **Security Reports**: Generate compliance reports and security dashboards for stakeholders
+* **Remediation Guidance**: Provide actionable remediation steps for security findings
+* **Audit Trails**: Maintain comprehensive audit logs for security events and policy changes
+
+== References
+
+== Knowledge Check
+
+This content covers the essential aspects of Red Hat Advanced Cluster Security (RHACS) that SREs would need to understand for implementing comprehensive security in OpenShift environments, focusing on practical operational security concerns. 

@@ -6,7 +6,8 @@ Welcome to the OpenShift SRE Workshop!
 
 === Workshop Goals
 
-TBD
+* OpenShift Components
+
 
 === Workshop Environment
 
@@ -15,14 +16,15 @@ TBD
 === Agenda
 
 .**Day 1** +
-TBD
+Focus on foundational SRE practices for core OpenShift operations. Learn to maintain critical Kubernetes components (etcd cluster backups, API server certificates, controller manager health, scheduler performance), manage infrastructure including node lifecycle operations and security hardening, implement observability using OpenShift's built-in Prometheus monitoring stack and alerting, configure comprehensive access and identity management with OAuth providers and RBAC, and perform essential cluster operations including updates, node scaling, image management, and specialized hardware like GPUs.
 
 .**Day 2** +
-TBD
+Advanced platform capabilities and ecosystem integrations for mature OpenShift environments. Implement GitOps workflows using OpenShift GitOps and ArgoCD for declarative application and infrastructure management, deploy enterprise secrets management using External Secrets Operator with cloud providers and HashiCorp Vault, enhance security posture with Red Hat Advanced Cluster Security for image scanning and runtime threat detection, enforce governance using Red Hat Gatekeeper for admission policy management, and architect scalable platforms with cluster autoscaling, multi-cluster connectivity using Submariner, and Advanced Cluster Manager for fleet management.
 
 === Who Should Attend
 
+OpenShift Cluster Owners
 
 === Conclusion
 
-Let’s get started!
+Let's get started!

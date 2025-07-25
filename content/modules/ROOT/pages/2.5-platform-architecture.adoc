@@ -1,0 +1,90 @@
+= Platform Architecture
+
+== Content
+
+Managing advanced platform architecture components including cluster scaling and multi-cluster connectivity:
+
+=== Cluster Autoscaler
+
+* **Installation**: Deploy Cluster Autoscaler using the ClusterAutoscaler custom resource
+* **Machine Set Integration**: Configure autoscaler to work with machine sets and machine pools
+* **Scaling Policies**: Define minimum and maximum node counts per machine set and availability zone
+* **Scale-up Triggers**: Configure pod pending thresholds and resource requirements for scale-up decisions
+* **Scale-down Policies**: Set node utilization thresholds and grace periods for safe node removal
+* **Priority Classes**: Use priority classes to influence autoscaling decisions for critical workloads
+
+=== Machine Autoscaler
+
+* **Machine Autoscaler Resources**: Create MachineAutoscaler custom resources for individual machine sets
+* **Scaling Boundaries**: Set appropriate minimum and maximum replica counts for different node types
+* **Zone Distribution**: Configure balanced scaling across multiple availability zones
+* **Instance Types**: Manage autoscaling for different instance types (general purpose, compute optimized, memory optimized)
+* **Cost Optimization**: Implement strategies for cost-effective scaling using spot instances and mixed instance types
+* **Integration Testing**: Test autoscaling behavior in development environments before production deployment
+
+=== Infrastructure Capacity Planning
+
+* **Resource Monitoring**: Monitor cluster-wide resource utilization trends and capacity metrics
+* **Capacity Forecasting**: Plan infrastructure capacity based on growth projections and usage patterns
+* **Multi-zone Planning**: Design capacity distribution across availability zones for high availability
+* **Reserved Capacity**: Plan for reserved capacity for critical system workloads and burst scenarios
+* **Cost Analysis**: Analyze infrastructure costs and optimize resource allocation for cost efficiency
+* **Performance Baselines**: Establish performance baselines for capacity planning decisions
+
+=== Multi-cluster Connectivity
+
+* **Cluster Mesh Architecture**: Design service mesh architectures that span multiple OpenShift clusters
+* **Cross-cluster Service Discovery**: Implement service discovery mechanisms across cluster boundaries
+* **Multi-cluster Ingress**: Configure ingress controllers for traffic routing between clusters
+* **Shared Load Balancing**: Implement global load balancing across multiple cluster endpoints
+* **Network Policy Coordination**: Coordinate network policies across interconnected clusters
+* **Certificate Management**: Manage TLS certificates for secure inter-cluster communication
+
+=== Submariner Integration
+
+* **Submariner Installation**: Deploy Submariner for cross-cluster network connectivity
+* **Broker Configuration**: Set up Submariner broker for cluster registration and coordination
+* **Gateway Configuration**: Configure gateway nodes for secure tunnel establishment
+* **Service Export/Import**: Manage service export and import across clusters using Submariner
+* **Network CIDRs**: Plan and manage non-overlapping network CIDRs across connected clusters
+* **Troubleshooting**: Debug cross-cluster connectivity issues and gateway health
+
+=== Advanced Cluster Manager (ACM)
+
+* **Hub Cluster Setup**: Configure Red Hat Advanced Cluster Manager hub cluster for multi-cluster management
+* **Managed Cluster Registration**: Register and manage multiple OpenShift clusters from central hub
+* **Application Lifecycle**: Deploy and manage applications across multiple clusters using ACM
+* **Policy Management**: Implement governance policies across multiple clusters
+* **Observability**: Monitor and observe multiple clusters from centralized dashboard
+* **Cluster Lifecycle**: Manage cluster provisioning, upgrades, and decommissioning at scale
+
+=== Network Mesh Technologies
+
+* **Service Mesh Integration**: Implement Istio or OpenShift Service Mesh across multiple clusters
+* **Traffic Management**: Configure traffic routing, load balancing, and failover across clusters
+* **Security Policies**: Implement mTLS and security policies in multi-cluster service mesh
+* **Observability**: Monitor service mesh traffic and performance across cluster boundaries
+* **Federation**: Configure service mesh federation for cross-cluster service communication
+* **Certificate Management**: Manage service mesh certificates and trust domains across clusters
+
+=== Platform Scaling Architecture
+
+* **Infrastructure Nodes**: Scale dedicated infrastructure nodes for OpenShift platform components
+* **Storage Scaling**: Plan and implement storage capacity scaling for persistent workloads
+* **Network Capacity**: Monitor and scale network capacity including load balancers and ingress controllers
+* **Registry Scaling**: Scale container image registry for high-throughput image operations
+* **Observability Scaling**: Scale monitoring, logging, and alerting infrastructure with cluster growth
+* **API Server Scaling**: Monitor and optimize API server performance under varying loads
+
+=== Automation and Integration
+
+* **Scaling Automation**: Implement automated scaling workflows using GitOps and CI/CD pipelines
+* **Event-driven Scaling**: Configure event-driven autoscaling based on application-specific triggers
+* **Integration APIs**: Use cluster autoscaler and platform APIs for custom scaling integrations
+* **Monitoring Integration**: Integrate autoscaling metrics with cluster monitoring and alerting systems
+* **Cost Management**: Implement automated cost management and optimization for scaling infrastructure
+* **Compliance Automation**: Ensure autoscaling activities maintain compliance with organizational policies
+
+== References
+
+== Knowledge Check

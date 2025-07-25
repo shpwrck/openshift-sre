@@ -1,0 +1,57 @@
+= Access and Identity Management
+
+== Content
+
+Managing user access, authentication, and authorization in OpenShift:
+
+=== Authentication Configuration
+
+* **OAuth Integration**: Configure and maintain OAuth providers (GitHub, Google, LDAP, etc.)
+* **Identity Providers**: Manage multiple identity provider configurations and failover scenarios
+* **Token Management**: Monitor OAuth token lifecycle, expiration, and refresh policies
+* **Session Handling**: Configure session timeout, concurrent session limits, and security policies
+* **Multi-factor Authentication**: Implement and maintain MFA requirements where applicable
+
+=== Authorization and RBAC
+
+* **Role-Based Access Control**: Maintain cluster roles, role bindings, and namespace-specific permissions
+* **Custom Roles**: Create and manage custom roles for specific operational requirements
+* **Service Accounts**: Manage service account lifecycle, permissions, and token rotation
+* **Group Management**: Synchronize and maintain group memberships from external identity providers
+* **Privilege Escalation**: Monitor and audit privilege escalation patterns and requests
+
+=== User Lifecycle Management
+
+* **User Onboarding**: Automate user provisioning and initial access setup
+* **Access Reviews**: Conduct regular access reviews and permission audits
+* **Offboarding**: Ensure proper user deactivation and access revocation procedures
+* **Identity Synchronization**: Maintain sync between external identity systems and OpenShift
+* **Emergency Access**: Maintain break-glass procedures for emergency administrative access
+
+=== Certificate and Secret Management
+
+* **TLS Certificates**: Rotate ingress, service, and internal communication certificates
+* **Secret Rotation**: Implement automated secret rotation for passwords, API keys, and tokens
+* **Certificate Authorities**: Manage internal CA certificates and trust chains
+* **Encryption at Rest**: Configure and maintain etcd encryption and secret encryption
+* **Secret Storage**: Secure secret storage practices and access patterns
+
+=== Security Contexts and Policies
+
+* **Pod Security Standards**: Implement and enforce pod security policies
+* **Security Context Constraints (SCCs)**: Manage SCCs for workload security requirements
+* **Admission Controllers**: Configure and maintain security-focused admission controllers
+* **Network Policies**: Implement network segmentation and micro-segmentation policies
+* **Image Security**: Manage image scanning, vulnerability policies, and trusted registries
+
+=== Multi-tenancy and Isolation
+
+* **Namespace Isolation**: Implement proper tenant separation and resource isolation
+* **Resource Quotas**: Manage tenant resource quotas and limits
+* **Network Segmentation**: Ensure proper network isolation between tenants
+* **Data Separation**: Maintain data privacy and separation between different user groups
+* **Shared Services**: Manage access to shared cluster services and resources
+
+== References
+
+== Knowledge Check
