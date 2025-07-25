@@ -1,4 +1,4 @@
-= OpenShift Primer
+= OpenShift SRE Workshop
 
 == Welcome
 

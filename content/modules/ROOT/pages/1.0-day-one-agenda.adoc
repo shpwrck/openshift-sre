@@ -5,5 +5,3 @@ TBD
 == Outcomes
 
 TBD
-
-xref:2.0-day-two-agenda.adoc[Jump to Day Two]
