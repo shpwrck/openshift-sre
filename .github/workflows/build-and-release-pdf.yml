@@ -23,17 +23,28 @@ jobs:
       uses: actions/setup-node@v4
       with:
         node-version: '18'
-        cache: 'npm'
         
-    - name: Install Antora and PDF extension
+    - name: Set up Ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: '3.1'
+        bundler-cache: true
+        
+    - name: Install Node.js dependencies
       run: |
         npm install -g @antora/cli@3.1.7 @antora/site-generator@3.1.7
         npm install -g @antora/pdf-extension
         
+    - name: Install Ruby dependencies
+      run: |
+        gem install bundler
+        bundle config set --local path 'vendor/bundle'
+        bundle install --jobs 4 --retry 3
+        
     - name: Build PDF with Antora
       run: |
         echo "Building PDF documentation..."
-        antora --stacktrace default-pdf.yml
+        bundle exec antora --stacktrace default-pdf.yml || antora --stacktrace default-pdf.yml
         
     - name: Find generated PDF
       id: find_pdf

@@ -40,3 +40,7 @@ yarn.lock
 
 # Don't duplicate Assets
 build/assembler/modules/_images/
+
+# Ruby/Bundler
+vendor/bundle/
+Gemfile.lock
